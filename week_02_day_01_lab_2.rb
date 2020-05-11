@@ -22,7 +22,7 @@ class SportsTeam
     if outcome == "yes"
       return @points = 3
     elsif outcome == "no"
-      return @points = 1
-    end 
+      return @points = 0
+    end
   end
 end

@@ -24,21 +24,19 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(true,team.check_players_name(players_name))
   end
 
-def test_has_team_won_yes
-  team = SportsTeam.new("Buchanan Bulls",
-    ["Michael", "Scottie", "Dennis"],"Keith Campbell",0)
-    has_team_won = "yes"
-  assert_equal(3,team.has_team_won(has_team_won))
+  def test_has_team_won_yes
+    team = SportsTeam.new("Buchanan Bulls",
+      ["Michael", "Scottie", "Dennis"],"Keith Campbell",0)
+      has_team_won = "yes"
+    assert_equal(3,team.has_team_won(has_team_won))
 
-end
+  end
 
-def test_has_team_won_no
-  team = SportsTeam.new("Buchanan Bulls",
-    ["Michael", "Scottie", "Dennis"],"Keith Campbell",0)
-    has_team_won = "no"
-  assert_equal(1,team.has_team_won(has_team_won))
-
-end
-
+  def test_has_team_won_no
+    team = SportsTeam.new("Buchanan Bulls",
+      ["Michael", "Scottie", "Dennis"],"Keith Campbell",0)
+      has_team_won = "no"
+    assert_equal(0,team.has_team_won(has_team_won))
+  end
 
 end
