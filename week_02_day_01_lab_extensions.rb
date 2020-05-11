@@ -1,13 +1,15 @@
 class Library
+  attr_accessor :book
 
-  # attr_accessor :team_name, :players, :coach
-  #
-  # def initialize(team_name, players, coach, points)
-  #
-  #   @team_name = team_name
-  #   @players = players
-  #   @coach = coach
-  #   @points = points
-  # end
+  def initialize(book)
+    @book = []
+  end
+
+
+  def book_name
+    for 
+
+    return book[:title]
+  end
 
 end
